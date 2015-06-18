@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Exercise</title>
+    <style type="text/css">
+        div{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+<button id="mybutton">Click me!</button>
+<div id="out">
+
+</div>
+
+<script type="application/javascript">
+    var b = document.getElementById("mybutton");
+    b.onclick = function(){
+        var getal = window.prompt("Geef een getal tussen 0 en 10 in");
+        var berekendgetal = 1;
+
+     for (var i=0; i<getal ; getal--){
+            berekendgetal = berekendgetal  * getal;
+     }
+
+
+        window.alert(berekendgetal);
+        var o = document.getElementById("out");
+        o.innerHTML = berekendgetal;
+        console.log(berekendgetal);
+    }
+</script>
+
+</body>
+</html>
